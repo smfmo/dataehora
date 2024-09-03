@@ -22,7 +22,7 @@ function calcular(){
                 resultado = 'erro! nao é possivel dividir por 0'
             }
             break;
-        case 'x':
+        case '*':
             resultado = n1 * n2
             break;
 
