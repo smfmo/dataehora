@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/exercicios/style.css">
+    <title>calculadora</title>
+
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col md-6 offset md-3">
+    <h2 class="text-center">calculadora master promax</h2>
+    <form >
+        <div class="mb-3">
+            <label for="num1" class="form-label">Primeiro operador</label>
+            <input type="number" class="form-label" id="num1" placeholder="escolha o primeiro número">
+        </div>
+
+        <div class="mb-3">
+            <label for="num2" class="form-label">segundo operador</label>
+            <input type="number" class="form-label" id="num2" placeholder="escolha o segundo numero">
+        </div>
+        <button type="button" class="btn btn-primary" onclick="setOperacao('+')">+</button>
+        <button type="button" class="btn btn-primary" onclick="setOperacao('-')">-</button>
+        <button type="button" class="btn btn-primary" onclick="setOperacao('*')">x</button>
+        <button type="button" class="btn btn-primary" onclick="setOperacao('/')">/</button>
+    </form>
+    <div class="mb-3 text-center">
+        <button type="number" class="btn btn-warning" onclick="calcular()">resultado</button>
+    </div>
+    <div>
+        
+         <div class="mt-4">
+            <h4 id="demo"> resultado</h4>
+        
+       
+    </div>
+    </div>    
+    </div>
+    </div>
+    <script src="/exercicios/script.js"></script>
+</body>
+</html>
